@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <input type="file" id="files" name="files[]">
+      
+        <h2>Filter reviews</h2>
+        <form>
+            <label>Order by rating:</label>
+            <select id="rate">
+              <option value="Highest First">Highest First</option>
+              <option value="Lowest First">Lowest First</option>
+            </select>
+            <br><br>
+            <label>Minimum rating:</label>
+            <select id="min_rate">
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+            <br><br>
+            <label>Order by date:</label>
+            <select id="date">
+              <option value="Newest First">Newest First</option>
+              <option value="Oldest First">Oldest First</option>
+            </select>
+            <br><br>
+            <label>Prioritize by text:</label>
+            <select id="text">
+              <option value="Yes">Yes</option>
+              <option>No</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="display_filter()">Submit</button>
+        </form>
+
+        <pre id="results"></pre>
+
+        <script src="task.js"></script>
+        <!-- <script src="test.js"></script> -->
+    </body>
+</html>
